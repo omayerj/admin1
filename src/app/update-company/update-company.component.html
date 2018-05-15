@@ -1,0 +1,22 @@
+<form class="ui form">
+  <h4 class="ui dividing header">Update Company</h4>
+  <!-- <div class="field">
+      <label>Company Name</label>
+      <div class="field">
+          <input type="text" name="title" [(ngModel)]="this.company.compName">
+      </div>
+  </div> -->
+  <div class="field">
+    <label>password</label>
+    <div class="field">
+        <input type="text" name="password" [(ngModel)]="this.company.password">
+    </div>
+</div>
+<div class="field">
+  <label>email</label>
+  <div class="field">
+      <input type="email" name="title" [(ngModel)]="this.company.email">
+  </div>
+</div>
+  <div class="ui button" tabindex="0" (click)="UpdateButton($event)">Update</div>
+</form>

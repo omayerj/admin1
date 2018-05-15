@@ -1,0 +1,27 @@
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 45px;
+    text-align: center;
+    background: #4CAF50;
+    color: white;
+}
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 35px;
+}
+
+img.avatar {
+    width: 40%;
+	border-radius: 40%;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}

@@ -1,0 +1,12 @@
+
+<form class="ui form">
+  <h4 class="ui dividing header">Update Customer</h4>
+
+  <div class="field">
+    <label>password</label>
+    <div class="field">
+        <input type="text" name="password" [(ngModel)]="this.customer.password">
+    </div>
+</div>
+  <div class="ui button" tabindex="0" (click)="UpdateButton($event)">Update</div>
+</form>

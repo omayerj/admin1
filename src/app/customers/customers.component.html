@@ -1,0 +1,25 @@
+
+<h1>
+  Customers</h1>
+<div class="ui middle aligned divided list">
+  <div class="item" *ngFor="let customer of Customers">
+    <div class="right floated content">
+      <div class="ui button" routerLink="../updateCustomer"  (click)="UpdateButton($event,customer)">Update</div>
+    </div>
+    <div class="right floated content">
+      <div class="ui button" (click)="RemoveButton($event,customer)">Remove</div>
+    </div>
+    <div class="right floated content">
+      <div class="ui button" routerLink="../Customer"  (click)="detailsButton($event,customer)">details</div>
+    </div>
+    <div class="ui big horizontal divided list">
+      <div class="item">
+        <div class="content">
+          <div class="header"> {{customer.custName}}</div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</div>

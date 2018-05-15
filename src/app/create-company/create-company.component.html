@@ -1,0 +1,25 @@
+<form class="ui form">
+  <h4 class="ui dividing header">Company</h4>
+  <div class="field">
+      <label>Company Name</label>
+      <div class="field">
+          <input type="text" name="title" [(ngModel)]="this.Company.compName">
+      </div>
+  </div>
+  <div class="field">
+    <label>password</label>
+    <div class="field">
+        <input type="password" name="title" [(ngModel)]="this.Company.password">
+    </div>
+</div>
+<div class="field">
+  <label>email</label>
+  <div class="field">
+      <input type="email" name="title" [(ngModel)]="this.Company.email">
+  </div>
+</div>
+
+ 
+
+  <div class="ui button" tabindex="0" (click)="CreateCompany($event)">Create</div>
+</form>

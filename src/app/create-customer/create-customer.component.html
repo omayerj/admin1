@@ -1,0 +1,20 @@
+<form class="ui form">
+  <h4 class="ui dividing header">Customer</h4>
+  <div class="field">
+      <label>Customer Name</label>
+      <div class="field">
+          <input type="text" name="title" [(ngModel)]="this.Customer.custName">
+      </div>
+  </div>
+  <div class="field">
+    <label>password</label>
+    <div class="field">
+        <input type="password" name="title" [(ngModel)]="this.Customer.password">
+    </div>
+</div>
+
+
+ 
+
+  <div class="ui button" tabindex="0" (click)="CreateCustomer($event)">Create</div>
+</form>

@@ -1,0 +1,31 @@
+
+<h1>
+  Companies</h1>
+<div class="ui middle aligned divided list">
+  <div class="item" *ngFor="let company of Companies">
+    <div class="right floated content">
+      <div class="ui button" routerLink="../updateCompany"  (click)="UpdateButton($event,company)">Update</div>
+    </div>
+    <div class="right floated content">
+      <div class="ui button" (click)="RemoveButton($event,company)">Remove</div>
+    </div>
+    <div class="right floated content">
+      <div class="ui button" routerLink="../Company"  (click)="detailsButton($event,company)">details</div>
+    </div>
+    <div class="ui big horizontal divided list">
+      <div class="item">
+        <div class="content">
+          <div class="header"> {{company.compName}}</div>
+        </div>
+      </div>
+      <!--begin-->
+      <div class="item">
+        <div class="content">
+          <div class="header"> {{company.email}}</div>
+        </div>
+      </div>
+      <!-- end -->
+
+    </div>
+  </div>
+</div>
